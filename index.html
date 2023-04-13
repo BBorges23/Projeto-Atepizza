@@ -1,105 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="esltilos.css">
     <title>AtePizza</title>
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-        </style>
+    </style>
     <style>
-        .row{
+        .row {
             margin-right: 0 !important;
         }
-        .logo-p{
+
+        .logo-p {
             font-family: 'Rubik Iso', cursive;
         }
-        
     </style>
 
 </head>
-<header>
-    
-    <nav class="navbar navbar-light bg-light px-5">
-        <div class="container">
-            <a class="nav-link active" href="#">
-                <p class="fs-3 logo-p mt-2 "><img src="imagens/18514975.jpg" alt="" width="55px" class="rounded-circle"> AtePizza</p>
+<header class="fixed-top">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light px-5">
+        <div class="container-fluid d-flex ">
+            <a class="nav-link active" href="index.html">
+                <p class="fs-3 logo-p mt-2 "><img src="imagens/18514975.jpg" alt="" width="55px" class="rounded-circle">
+                    AtePizza</p>
             </a>
-            <a class="nav-link " href="#" >Home</a>
-            <a class="nav-link  " href="#" >Categorias</a>
-            <a class="nav-link " href="#" >Produtos</a>
-            <a class="nav-link " href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
-                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
-            </svg></a>
-            
-            <a class="nav-link " href="#" > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
-                </svg></a>
-        </div>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="carrimho.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                            <path
+                                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                        </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="loginPage.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+        </div>
     </nav>
 </header>
+
 <body>
-    <!-- Banner em forma de carrocel -->
-    <div class="row">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="imagens/mainbanner1.jpg" class="d-block w-100" alt="...">
+    <!-- Banner em forma de carrocel -->\
+    <section id="carrocel">
+        <div class="carrocel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/mainbanner1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/mainbanner2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    </div> -->
                 </div>
-                <div class="carousel-item">
-                <img src="imagens/mainbanner2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <!-- <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                </div> -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
 
-<!-- Parte dos conteines das pizzas -->
+
+    <!-- Parte dos conteines das pizzas -->
 
 
     <section class="container ">
         <!-- nav  -->
         <nav>
             <div class="nav nav-tabs d-flex justify-content-around w-100 gap-5 mt-3" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Promoções</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Pizzas do mês</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Menu</button>
             </div>
             <div class="tab-content" id="nav-tabContent">
                 <!-- Mais vendidas -->
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    
-                </div>
-                 <!-- populares -->
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> 
-                    
+
+
                     <!-- container 1 pizzas  row 1-->
                     <div class="row py-2 d-flex  w-100 ">
-                    
-                        <div class="col-3 logo-p rounded  py-3 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -112,23 +149,23 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
-                
-                        <div class="col-3 logo-p rounded  py-3 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -141,22 +178,22 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                        <div class="col- d-flex justify-content-between bg-light p-2">
-                            <p>$24.99</p>
-                            <button type="button" class="btn btn-secondary ">Buy</button>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
                         </div>
-                       
-                    </div>
-                        <div class="col-3 logo-p rounded  py-3 ">
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -169,22 +206,22 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                       
+
                         </div>
-                        <div class="col-3 logo-p rounded  py-3 ">
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -197,27 +234,27 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
                     </div>
-                
+
                     <!-- container 2 pizzas row 2 -->
                     <div class="row py-2 d-flex  w-100 ">
-            
-                        <div class="col-3 logo-p rounded  py-3 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -230,22 +267,22 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
-                        <div class="col-3 logo-p rounded  py-3 ">
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -258,22 +295,22 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
-                        <div class="col-3 logo-p rounded  py-3 ">
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -286,22 +323,22 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
-                        <div class="col-3 logo-p rounded  py-3 ">
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
                             <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
-                            
-            
-                            <div class="col- d-flex justify-content-between bg-light p-2 ">
-            
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
                                 <p class="nome fs-6">Nome</p>
-            
+
                                 <div class="star-rating ">
                                     <input type="radio" name="star" class="star-1" id="star-1">
                                     <label class="star-1" for="star-1"></label>
@@ -314,24 +351,577 @@
                                     <input type="radio" name="star" class="star-5" id="star-5">
                                     <label class="star-5" for="star-5"></label>
                                 </div>
-                            
+
                             </div>
-                            <div class="col- d-flex justify-content-between bg-light p-2">
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
                                 <p>$24.99</p>
                                 <button type="button" class="btn btn-secondary ">Buy</button>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
-            
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-              </div>
+
+                <!-- populares -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                    <!-- container 1 pizzas  row 1-->
+                    <div class="row py-2 d-flex  w-100 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- container 2 pizzas row 2 -->
+                    <div class="row py-2 d-flex  w-100 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+
+
+                    <!-- container 1 pizzas  row 1-->
+                    <div class="row py-2 d-flex  w-100 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- container 2 pizzas row 2 -->
+                    <div class="row py-2 d-flex  w-100 ">
+
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza1.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza2.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza3.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 logo-p rounded  py-3 ">
+                            <img src="imagens/pizza4.jpg" alt="pizza" class="img-thumbnail">
+
+
+                            <div class="col-sm d-flex justify-content-between bg-light p-2 ">
+
+                                <p class="nome fs-6">Nome</p>
+
+                                <div class="star-rating ">
+                                    <input type="radio" name="star" class="star-1" id="star-1">
+                                    <label class="star-1" for="star-1"></label>
+                                    <input type="radio" name="star" class="star-2" id="star-2">
+                                    <label class="star-2" for="star-2"></label>
+                                    <input type="radio" name="star" class="star-3" id="star-3">
+                                    <label class="star-3" for="star-3"></label>
+                                    <input type="radio" name="star" class="star-4" id="star-4">
+                                    <label class="star-4" for="star-4"></label>
+                                    <input type="radio" name="star" class="star-5" id="star-5">
+                                    <label class="star-5" for="star-5"></label>
+                                </div>
+
+                            </div>
+                            <div class="col-sm d-flex justify-content-between bg-light p-2">
+                                <p>$24.99</p>
+                                <button type="button" class="btn btn-secondary ">Buy</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </nav>
-        
+
         <!-- fim nav -->
-       
-        
+
+
     </section>
 </body>
+
+<footer class="py-5  p-3 mb-2 bg-light text-dark">
+    <div class="row" bis_skin_checked="1">
+        <div class="col-md-4 mb-3" bis_skin_checked="1">
+            <h5>Contatos</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-phone" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg> Telefone 9270707070</a></li>
+                <br>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-mailbox2" viewBox="0 0 16 16">
+                            <path
+                                d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z" />
+                            <path
+                                d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z" />
+                        </svg> AtePizza@edu.atec.pt</a></li>
+                <br>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-building" viewBox="0 0 16 16">
+                            <path
+                                d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                            <path
+                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                        </svg> Quinta da Marqueza - Palmela, Parque Industrial da Volkswagen Autoeuropa, 2950-557 Q.ta
+                        do Anjo</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99684.00290799627!2d-9.11815406719046!3d38.6689931332945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd194622e5ad46d1%3A0x123b3f86b5ed915a!2sATEC%20-%20Academia%20de%20Forma%C3%A7%C3%A3o%20-%20Palmela!5e0!3m2!1spt-PT!2spt!4v1681327262060!5m2!1spt-PT!2spt"
+                width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-md-4 offset-md-1 mb-3" bis_skin_checked="1">
+            <form>
+                <h5>Se inscreva nas nossas promoções</h5>
+                <p>Uma promoção nova todo o mês</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2" bis_skin_checked="1">
+                    <label for="newsletter1" class="visually-hidden">Email</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email" spellcheck="false"
+                        data-ms-editor="true">
+                    <button class="btn btn-primary" type="button">Inscrever-se</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top" bis_skin_checked="1">
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+</footer>
+
 </html>
